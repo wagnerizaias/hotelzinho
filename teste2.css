@@ -1,0 +1,108 @@
+
+
+body { background-image: url(2.JPG); color: white; }.
+
+h1{
+    color: rgb(93, 138, 206);
+}
+    h1{text-align: center;
+}
+
+p{
+	text-align: center;
+}
+form{
+	text-align: center;
+	color: #222;
+	text-decoration: black;
+	text-transform: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+	color: rgb(17, 19, 19);
+}
+
+
+section{
+	color: black;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color:#f9f9f9;
+}
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+
+#check{
+	display: none;
+	background-color: #f00;
+}
+
+.barra{
+	background-color: rgba(94, 175, 164, 0.048);
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	left: -300px;
+	transition: all .2s linear;
+}
+
+.barra .link{
+	list-style: none;
+	background-color: #494950;
+}
+
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+}
+
+.link{
+	color: #f4f4f9;
+	font-family: 'Arial';
+	font-size: 12pt;
+	padding: 20px;
+	border-bottom: 2px solid #222;
+	transition:  all .2s linear;
+	opacity: 0;
+	margin-top: 200px;
+}
+.link:hover{
+	background-color: #050542;
+}
+
+#check:checked ~ .barra nav a .link{
+		opacity: 1;
+		margin-top: 0;
+		transition-delay: .2s;
+}
+#check:checked ~ .barra{
+		transform: translateX(300px);
+
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+	color: blue;
+	width: 100%;
+	margin: 0 auto;
+	height: 100px;
+	text-align: right;
+	line-height: 120px;
+}
+
